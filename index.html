@@ -1,86 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malla Biotecnología - FCIEN</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Malla de Biotecnología</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Malla Interactiva - Biotecnología FCIEN</h1>
-  <p>Hacé clic en las materias para marcar tu avance. Las que dependen de previas se desbloquean automáticamente.</p>  <div id="malla">
-    <!-- Semestre 1 -->
-    <div class="semestre" data-semestre="1">
+  <h1>Malla Biotecnología</h1>
+  <div class="malla">
+    <!-- SEMESTRE 1 -->
+    <div class="semestre">
       <h2>Semestre 1</h2>
-      <div class="materia" data-nombre="Matemática I">Matemática I</div>
-      <div class="materia" data-nombre="Física I para Biociencias y Geociencias">Física I para Biociencias y Geociencias</div>
-      <div class="materia" data-nombre="Laboratorio de Física 1">Laboratorio de Física 1</div>
-      <div class="materia" data-nombre="Química General">Química General</div>
-      <div class="materia" data-nombre="Biología General">Biología General</div>
-      <div class="materia" data-nombre="SPR módulo I">SPR módulo I</div>
-      <div class="materia" data-nombre="SPR módulo II">SPR módulo II</div>
-    </div><!-- Semestre 2 -->
-<div class="semestre" data-semestre="2">
-  <h2>Semestre 2</h2>
-  <div class="materia" data-nombre="Matemática II - módulo I" data-previas="Matemática I">Matemática II - módulo I</div>
-  <div class="materia" data-nombre="Matemática II - módulo II" data-previas="Matemática I">Matemática II - módulo II</div>
-  <div class="materia" data-nombre="Química Orgánica I" data-previas="Química General">Química Orgánica I</div>
-  <div class="materia" data-nombre="Química Analítica" data-previas="Matemática I,Química General,SPR módulo II">Química Analítica</div>
-  <div class="materia" data-nombre="Introducción a la Biotecnología" data-previas="Biología General">Introducción a la Biotecnología</div>
-</div>
+      <div class="materia">Matemática I</div>
+      <div class="materia">Química General</div>
+      <div class="materia">Biología Celular</div>
+      <div class="materia">Herramientas Informáticas</div>
+    </div>
 
-<!-- Semestre 3 -->
-<div class="semestre" data-semestre="3">
-  <h2>Semestre 3</h2>
-  <div class="materia" data-nombre="Biología Celular" data-previas="Biología General,Química General,Química Orgánica I,Física I para Biociencias y Geociencias">Biología Celular</div>
-  <div class="materia" data-nombre="Fisicoquímica I" data-previas="Matemática I,Matemática II - módulo I,Laboratorio de Física 1,Química Analítica">Fisicoquímica I</div>
-  <div class="materia" data-nombre="Bioquímica" data-previas="Química General,Química Orgánica I,Física I para Biociencias y Geociencias">Bioquímica</div>
-  <div class="materia" data-nombre="Laboratorio de Química Orgánica" data-previas="Química Orgánica I,SPR módulo II">Laboratorio de Química Orgánica</div>
-</div>
+    <!-- SEMESTRE 2 -->
+    <div class="semestre">
+      <h2>Semestre 2</h2>
+      <div class="materia">Matemática II</div>
+      <div class="materia">Química Orgánica</div>
+      <div class="materia">Bioquímica I</div>
+      <div class="materia">Física</div>
+    </div>
 
-<!-- Semestre 4 -->
-<div class="semestre" data-semestre="4">
-  <h2>Semestre 4</h2>
-  <div class="materia" data-nombre="Microbiología General" data-previas="Química General,Química Orgánica I,Biología General,Bioquímica,Física I para Biociencias y Geociencias">Microbiología General</div>
-  <div class="materia" data-nombre="Laboratorio de Análisis Microbiológico" data-previas="Química General,Química Orgánica I,Biología General,Bioquímica,Física I para Biociencias y Geociencias">Laboratorio de Análisis Microbiológico</div>
-  <div class="materia" data-nombre="Estadística para ciencias" data-previas="Matemática I,Matemática II - módulo I">Estadística para ciencias</div>
-  <div class="materia" data-nombre="Introducción a los sistemas de gestión">Introducción a los sistemas de gestión</div>
-  <div class="materia" data-nombre="Genética General" data-previas="Bioquímica,Biología Celular">Genética General</div>
-</div>
+    <!-- SEMESTRE 3 -->
+    <div class="semestre">
+      <h2>Semestre 3</h2>
+      <div class="materia">Microbiología General</div>
+      <div class="materia">Biología Molecular</div>
+      <div class="materia">Bioquímica II</div>
+      <div class="materia">Estadística</div>
+    </div>
 
-<!-- Semestre 5 -->
-<div class="semestre" data-semestre="5">
-  <h2>Semestre 5</h2>
-  <div class="materia" data-nombre="Biología Molecular" data-previas="Bioquímica,Biología Celular,Genética General">Biología Molecular</div>
-  <div class="materia" data-nombre="Fundamentos de ingeniería de bioprocesos">Fundamentos de ingeniería de bioprocesos</div>
-  <div class="materia" data-nombre="Gestión tecnológica">Gestión tecnológica</div>
-  <div class="materia" data-nombre="Calidad aplicada al Laboratorio" data-previas="Bioquímica,SPR módulo II">Calidad aplicada al Laboratorio</div>
-  <div class="materia" data-nombre="Optativas/Electivas">Optativas/Electivas</div>
-</div>
+    <!-- SEMESTRE 4 -->
+    <div class="semestre">
+      <h2>Semestre 4</h2>
+      <div class="materia">Genética</div>
+      <div class="materia">Inmunología</div>
+      <div class="materia">Biotecnología I</div>
+      <div class="materia">Fisiología</div>
+    </div>
 
-<!-- Semestre 6 -->
-<div class="semestre" data-semestre="6">
-  <h2>Semestre 6</h2>
-  <div class="materia" data-nombre="Laboratorio de bioprocesos">Laboratorio de bioprocesos</div>
-  <div class="materia" data-nombre="Ingeniería de bioprocesos">Ingeniería de bioprocesos</div>
-  <div class="materia" data-nombre="Inmunología" data-previas="Química Orgánica I,Biología Celular,Bioquímica">Inmunología</div>
-  <div class="materia" data-nombre="Bases jurídicas de la empresa">Bases jurídicas de la empresa</div>
-  <div class="materia" data-nombre="Optativas/Electivas">Optativas/Electivas</div>
-</div>
+    <!-- SEMESTRE 5 -->
+    <div class="semestre">
+      <h2>Semestre 5</h2>
+      <div class="materia">Biotecnología II</div>
+      <div class="materia">Ingeniería Genética</div>
+      <div class="materia">Farmacología</div>
+      <div class="materia">Bioética</div>
+    </div>
 
-<!-- Semestre 7 -->
-<div class="semestre" data-semestre="7">
-  <h2>Semestre 7</h2>
-  <div class="materia" data-nombre="Procesos de separación y purificación">Procesos de separación y purificación</div>
-  <div class="materia" data-nombre="EFI u otra actividad integradora">EFI u otra actividad integradora</div>
-  <div class="materia" data-nombre="Optativas/Pasantía">Optativas/Pasantía</div>
-</div>
+    <!-- SEMESTRE 6 -->
+    <div class="semestre">
+      <h2>Semestre 6</h2>
+      <div class="materia">Bioprocesos</div>
+      <div class="materia">Biotecnología Vegetal</div>
+      <div class="materia">Regulación y Legislación</div>
+      <div class="materia">Optativa 1</div>
+    </div>
 
-<!-- Semestre 8 -->
-<div class="semestre" data-semestre="8">
-  <h2>Semestre 8</h2>
-  <div class="materia" data-nombre="Optativas/Pasantía">Optativas/Pasantía</div>
-  <div class="materia" data-nombre="Legislación y propiedad intelectual">Legislación y propiedad intelectual</div>
-  <div class="materia" data-nombre="Trabajo final de grado">Trabajo final de grado</div>
-</div>
+    <!-- SEMESTRE 7 -->
+    <div class="semestre">
+      <h2>Semestre 7</h2>
+      <div class="materia">Biotecnología Ambiental</div>
+      <div class="materia">Emprededurismo</div>
+      <div class="materia">Optativa 2</div>
+      <div class="materia">Taller de Proyecto I</div>
+    </div>
 
-  </div>  <script src="script.js"></script></body>
+    <!-- SEMESTRE 8 -->
+    <div class="semestre">
+      <h2>Semestre 8</h2>
+      <div class="materia">Taller de Proyecto II</div>
+      <div class="materia">Práctica Profesional</div>
+      <div class="materia">Seminario Final</div>
+      <div class="materia">Optativa 3</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
