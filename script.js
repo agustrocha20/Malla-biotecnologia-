@@ -51,3 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
   // Refrescamos estado inicial
   actualizarMalla();
 });
+// Función para marcar o desmarcar la materia con estilo tachado
+function marcarCompletada(codigo) {
+  const div = document.getElementById(`mat-${codigo}`);
+  const chk = document.getElementById(`chk-${codigo}`);
+  if (chk.checked) {
+    div.classList.add("completada");
+  } else {
+    div.classList.remove("completada");
+  }
+}
+
+// Luego, adaptar tu función actualizarMalla para llamar esta función:
+// (...)
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("input[type=checkbox]").forEach(chk => {
+    const codigo = chk.id.replace(/^chk-/, "");
+    chk.addEventListener("change", () => {
+      marcarCompletada(codigo);
+      actualizarMalla();
+    });
+  });
+  actualizarMalla();
+});
