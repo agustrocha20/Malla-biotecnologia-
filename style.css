@@ -22,3 +22,7 @@ p { text-align: center; margin-bottom: 30px; color: #555; }
 
 @media (max-width: 600px) { #malla { grid-template-columns: 1fr; } }
 
+.completada {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
